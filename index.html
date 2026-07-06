@@ -1,110 +1,178 @@
 <!doctype html>
 <html lang="ko">
   <head>
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link rel="shortcut icon" href="images/favicon/favicon-96x96.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link rel="manifest" href="images/favicon/favicon-96x96.png" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>restaurant</title>
+    <title>Easy Restaurant</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <!-- 전체 레이아웃 -->
     <div class="wrap">
-      <!-- 상단 -->
+      <!-- ================= Header ================= -->
       <header class="header">
         <div class="inner">
-          <a href="#" class="logo">Eagy Restuarant</a>
+          <a href="#" class="logo"> Easy Restaurant </a>
+
           <nav class="nav">
             <ul>
-              <li>문의하기</li>
-              <li>로그인</li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">로그인</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <!-- 2. 타이틀영역 -->
+      <!-- ================= Title ================= -->
 
       <section class="title-section">
         <div class="inner">
           <img src="images/waiter.PNG" alt="웨이터" />
 
           <div class="title-text">
-            <h4>안녕하세요! 웨이터가</h4>
+            <h2>안녕하세요! 웨이터가</h2>
             <p>빠른 예약을 도와드립니다.</p>
           </div>
         </div>
       </section>
 
-      <!-- 3. 클래스영역 -->
-       
-      <div class="class-wrap">
+      <!-- ================= Menu ================= -->
+
+      <section class="menu-section">
         <div class="inner">
-          <ul class="class-list">
-            <!-- 클래스1번 -->
+          <ul class="menu-list">
+            <!-- 카드1 -->
             <li class="card">
-              <img src="images/steak.PNG" alt="스테이크파스타" />
-              <p >스테이크 파스타</p>
-              <p>점심, 저녁 최소2인</p>
-              <p class="price"> 1인 30,000원</p>
-              <p>주말예약가능</p>
-              
-            </li>
-<!-- 클래스 2번 -->
-<li class="card">
-              <img src="images/steak.PNG" alt="스테이크파스타" />
-              <p>스테이크 파스타</p>
-              <p>점심, 저녁 최소2인</p>
-              <p class="price"> 1인 30,000원</p>
-              <p>주말예약가능</p>
-              
-            </li>
+              <img src="images/steak.PNG" alt="스테이크 파스타" />
 
-<!-- 클래스 3번 -->
+              <div class="card-body">
+                <h3>
+                  스테이크 파스타
+                  <i class="fa-solid fa-utensils"></i>
+                </h3>
 
-<li class="card">
-              <img src="images/steak.PNG" alt="스테이크파스타" />
-              <p>스테이크 파스타</p>
-              <p>점심, 저녁 최소2인</p>
-              <p class="price"> 1인 30,000원</p>
-              <p>주말예약가능</p>
-              
+                <p class="info">
+                  점심, 저녁<br />
+                  최소 2인
+                </p>
+
+                <p class="price">1인 30,000원</p>
+
+                <span class="badge"> 주말예약가능 </span>
+              </div>
             </li>
 
+            <!-- 카드2 -->
 
+            <li class="card">
+              <img src="images/pizza.PNG" alt="피자" />
 
+              <div class="card-body">
+                <h3>
+                  피자
+                  <i class="fa-solid fa-utensils"></i>
+                </h3>
 
+                <p class="info">
+                  점심<br />
+                  최소 3인
+                </p>
 
+                <p class="price">1인 15,000원</p>
+
+                <span class="badge"> 주말예약가능 </span>
+              </div>
+            </li>
+
+            <!-- 카드3 -->
+
+            <li class="card">
+              <img src="images/pasta.PNG" alt="토마토 파스타" />
+
+              <div class="card-body">
+                <h3>
+                  토마토 파스타
+                  <i class="fa-solid fa-utensils"></i>
+                </h3>
+
+                <p class="info">
+                  점심, 저녁<br />
+                  최소 1인
+                </p>
+
+                <p class="price">1인 10,000원</p>
+
+                <span class="badge weekday"> 평일만 가능 </span>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <!-- 푸터영역 -->
+      <!-- ================= Footer ================= -->
+
       <footer class="footer">
         <div class="inner">
-          <div class="text-left">
+          <div class="footer-left">
             <p>
-              Eagy Restaurant는 남녀노소 모든 고객님들에게 편리한 서비스와
+              <span class="footer-one">Easy Restaurant</span>은 남녀노소 모든
+              고객님들에게 편리한 서비스와 <br />
               사랑의 음식을 드리는 양식 레스토랑입니다.
             </p>
-            <p class="english">
-              Eagy Restaurant is a Western restaurant that provides customers
+
+            <p class="eng">
+              Easy Restaurant is a Western restaurant that provides customers
               <br />with convenient services and loving food.
             </p>
           </div>
-          <div class="text-right">
-            <p class="top"><b>찾아오시는길: 대구 달서구 대곡동 11-1</b></p>
-            <p class="bottom"><b>사업자 번호: 053-0088-9900</b></p>
 
-            <div class="icon">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-solid fa-blog"></i>
+          <div class="footer-right">
+            <p>
+              <strong>찾아오시는 길 :</strong>
+              대구 달서구 대곡동 11-1
+            </p>
+
+            <p>
+              <strong>사업자 번호 :</strong>
+              053-0088-9900
+            </p>
+
+            <div class="sns">
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-solid fa-blog"></i>
+              </a>
             </div>
           </div>
         </div>
